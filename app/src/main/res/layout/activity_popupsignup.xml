@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    tools:context="com.example.l31005.newgen.PopUpSignUp"
+    android:background="#dedede">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/user_pic"
+        android:id="@+id/userPicture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Your Account for:"
+        android:textSize="20dp"
+        android:id="@+id/text1"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/userPicture"
+        android:layout_marginTop="15dp"/>
+
+
+    <Spinner
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:id="@+id/accType"
+        android:layout_below="@+id/text1"
+        android:entries="@array/accType"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_style"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile: (+65)"
+        android:textSize="20dp"
+        android:id="@+id/signUpUserText"
+        android:layout_below="@+id/accType"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signUpUserIdTextField"
+        android:inputType="number"
+        android:layout_toRightOf="@+id/signUpUserText"
+        android:ems="10"
+        android:layout_below="@+id/accType"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:textSize="20dp"
+        android:id="@+id/signUpPasswordText"
+        android:layout_below="@+id/signUpUserText"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/singUpPasswordTextField"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_toRightOf="@+id/signUpPasswordText"
+        android:layout_below="@+id/signUpUserIdTextField"
+        />
+
+    <TextView
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:text="Confirm Password:"
+        android:textSize="20dp"
+        android:id="@+id/confirmPasswordText"
+        android:layout_below="@+id/signUpPasswordText"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirmPasswordTextField"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_toRightOf="@+id/confirmPasswordText"
+        android:layout_below="@+id/singUpPasswordTextField"
+        android:layout_marginTop="15dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="NEXT"
+        android:textSize="18dp"
+        android:id="@+id/nxtBtn"
+        android:layout_below="@id/confirmPasswordTextField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="CANCEL"
+        android:textSize="18dp"
+        android:id="@+id/cancelButton"
+        android:layout_below="@id/nxtBtn"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

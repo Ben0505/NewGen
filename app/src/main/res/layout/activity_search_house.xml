@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.l31005.newgen.SearchHouse">
+
+    <TextView
+        android:id="@+id/searchText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/searchText1"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Property"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:id="@+id/locationTextView"
+        android:paddingTop="15dp"
+        android:layout_below="@+id/searchText"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:hint="Address or postal code"
+        android:textSize="20dp"
+        android:id="@+id/locationTextField"
+        android:layout_below="@+id/locationTextView"
+        android:background="@drawable/border_style"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Property"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:id="@+id/districtText"
+        android:paddingTop="15dp"
+        android:layout_below="@+id/locationTextField"/>
+
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:id="@+id/linear1"
+        android:layout_below="@+id/districtText"
+        android:baselineAligned="false"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Property Type"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:id="@+id/typeText"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Bedrooms"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:id="@+id/roomText"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:id="@+id/linear2"
+        android:layout_below="@+id/linear1"
+        android:layout_marginTop="5dp">
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/typeValue"
+            android:entries="@array/type2"
+            android:layout_weight="1"
+            />
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/roomValue"
+            android:entries="@array/roomsListing"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:id="@+id/submitSearch"
+        android:layout_below="@+id/linear1"
+        android:layout_marginTop="50dp"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    tools:context="com.example.l31005.newgen.MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN WITH"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:id="@+id/loginText"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/loginButton"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:layout_toRightOf="@+id/loginText"
+        android:layout_above="@+id/loginButton"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:layout_toLeftOf="@+id/loginText"
+        android:layout_above="@+id/loginButton"
+        android:layout_marginBottom="18dp"
+        android:layout_marginRight="10dp"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:id="@+id/loginButton"
+        android:layout_above="@+id/signUpButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:id="@+id/signUpButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="30dp"/>
+
+
+</RelativeLayout>

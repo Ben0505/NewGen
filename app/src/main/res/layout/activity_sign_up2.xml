@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.l31005.newgen.SignUp2">
+
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="First Name:"
+                android:textSize="30dp"/>
+
+            <EditText
+                android:id="@+id/firstNm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First Name"
+                android:textSize="20dp"
+                android:ems="10"
+                android:layout_below="@+id/txt1"
+                android:background="@drawable/border_style"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Last Name:"
+                android:textSize="30dp"
+                android:layout_below="@+id/firstNm"
+                android:layout_marginTop="15dp"
+                />
+
+            <EditText
+                android:id="@+id/lastNm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                android:textSize="20dp"
+                android:ems="10"
+                android:layout_below="@+id/txt2"
+                android:background="@drawable/border_style"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NRIC:"
+                android:textSize="30dp"
+                android:layout_below="@+id/lastNm"
+                android:layout_marginTop="15dp"
+                />
+
+            <EditText
+                android:id="@+id/nric"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="S#######X"
+                android:textSize="20dp"
+                android:ems="10"
+                android:layout_below="@+id/txt3"
+                android:background="@drawable/border_style"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:textSize="30dp"
+                android:layout_below="@+id/nric"
+                android:layout_marginTop="15dp"
+                />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="example_example@example.com"
+                android:textSize="20dp"
+                android:ems="10"
+                android:layout_below="@+id/txt4"
+                android:background="@drawable/border_style"
+                android:layout_marginTop="5dp"
+                />
+
+
+
+    <Button
+        android:id="@+id/submitSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:textSize="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+
+        />
+
+
+</RelativeLayout>
