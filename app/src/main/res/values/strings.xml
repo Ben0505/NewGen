@@ -9,6 +9,10 @@
         <u>SEARCH</u>
     </string>
 
+    <string name="recBudget">
+        <u>Recommended Budget</u>
+    </string>
+
     //DISTRICT
     <string-array name="districts">
         <item>ALL DISTRICTS</item>
