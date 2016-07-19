@@ -1,5 +1,6 @@
 package com.example.l31005.newgen;
 
+
 import android.annotation.TargetApi;
 import android.content.Intent;
 import android.os.Build;
@@ -62,6 +63,7 @@ public class NavigationActivity extends AppCompatActivity
 
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
     }
 
     @Override

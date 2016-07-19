@@ -9,6 +9,39 @@
         <u>SEARCH</u>
     </string>
 
+    //DISTRICT
+    <string-array name="districts">
+        <item>ALL DISTRICTS</item>
+        <item>D01  Boat Quay / Raffles Place / Marina</item>
+        <item>D02  Chinatown / Tanjong Pagar</item>
+        <item>D03  Alexandra / Common Wealth</item>
+        <item>D04  Harbourfront / Telok Blangah</item>
+        <item>D05  Buona Vista / West Coast / Clementi</item>
+        <item>D06  City Hall / Clarke Quay</item>
+        <item>D07  Beach Road / Bugis / Rochor</item>
+        <item>D08  Farrer Park / Serangoon Rd</item>
+        <item>D09  Orchard / River Valley</item>
+        <item>D10  Tanglin / Holland</item>
+        <item>D11  Newton / Novena</item>
+        <item>D12  Balestier / Toa Payoh</item>
+        <item>D13  Macpherson / Potong Pasir</item>
+        <item>D14  Eunos / Geylang / Paya Lebar</item>
+        <item>D15  East Coast / Marine Parade</item>
+        <item>D16  Bedok / Upper East Coast</item>
+        <item>D17  Changi Airport / Changi Village</item>
+        <item>D18  Pasir Ris / Tampines</item>
+        <item>D19  Hougang / Punggol / Sengkang</item>
+        <item>D20  Ang Mo Kio / Bishan / Thomson</item>
+        <item>D21  Clementi Park / Upper Bukit Timah</item>
+        <item>D22  Boon Lay / Jurong / Tuas</item>
+        <item>D23  Dairy Farm / Bukit Panjang / Chua Chu Kang</item>
+        <item>D24  Lim Chu Kang / Tengah</item>
+        <item>D25  Admilarty / Woodlands</item>
+        <item>D26  Mandai / Upper Thomson</item>
+        <item>D27  Sembawang / Yishun</item>
+        <item>D28  Seletar Yio Chu Kang</item>
+    </string-array>
+
     //Account type
     <string-array name="accType">
         <item>Choose One...</item>

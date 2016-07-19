@@ -1,5 +1,6 @@
 package com.example.l31005.newgen;
 
+
 import android.annotation.TargetApi;
 import android.app.Fragment;
 import android.content.Intent;
@@ -12,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+
 
 @TargetApi(Build.VERSION_CODES.HONEYCOMB)
 
