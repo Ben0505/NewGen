@@ -20,31 +20,132 @@
         android:layout_marginRight="20dp"
         />
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout1"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_below="@id/infoText"
-        android:layout_marginTop="20dp"
-        >
 
-        <ListView
+
+        <RelativeLayout
+            android:id="@+id/contributionSection"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="180dp"
+            android:layout_below="@+id/infoText"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
             >
-        </ListView>
 
-    </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#000"/>
+
+            <TextView
+                android:id="@+id/contritext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contribution to Porperty:"
+                android:textSize="35dp"
+                android:padding="10dp"
+                android:textColor="#000"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contritext">
+
+                <TextView
+                    android:id="@+id/contrival1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="value1"
+                    android:textSize="25dp"
+                    android:padding="25dp" />
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/arrow_right"
+                    android:foregroundGravity="right"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contritext"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/contrival1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="value1"
+                    android:textSize="25dp"
+                    android:padding="25dp"
+                    android:layout_weight="1.89" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_right"
+                    android:foregroundGravity="right"/>
+
+            </LinearLayout>-->
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#000"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/grantsSection"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_below="@+id/contributionSection"
+            android:background="#9f9f9f"
+            >
+
+            <TextView
+                android:id="@+id/granttext1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Housing Grants available:"
+                android:textSize="34dp"
+                android:padding="10dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/grantval1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="value2"
+                android:textSize="25dp"
+                android:layout_below="@+id/granttext1"
+                android:padding="25dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#000"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="SUBMIT"
-        android:textSize="20dp"
+        android:textSize="18dp"
         android:id="@+id/submitFinPlanButton"
-        android:layout_below="@+id/relativeLayout1"
         android:layout_centerHorizontal="true"
-        android:layout_margin="20dp"/>
-
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>

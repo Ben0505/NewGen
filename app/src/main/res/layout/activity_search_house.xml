@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:background="#cecece">
+        android:background="#83cbff">
 
         <TextView
             android:id="@+id/recommendedBudgetText"
@@ -165,6 +165,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="SUBMIT"
+        android:textSize="18dp"
         android:id="@+id/submitSearch"
         android:layout_margin="16dp"
         android:layout_alignParentBottom="true" />

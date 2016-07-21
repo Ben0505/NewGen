@@ -13,6 +13,12 @@
         <u>Recommended Budget</u>
     </string>
 
+    <string-array name="values001">
+        <item>0 People</item>
+        <item>(None Chosen)</item>
+    </string-array>
+
+
     //DISTRICT
     <string-array name="districts">
         <item>ALL DISTRICTS</item>
@@ -46,24 +52,6 @@
         <item>D28  Seletar Yio Chu Kang</item>
     </string-array>
 
-    //Account type
-    <string-array name="accType">
-        <item>Choose One...</item>
-        <item>USERS / BUYERS</item>
-        <item>AGENTS</item>
-    </string-array>
-
-
-    <string-array name="type2">
-        <item>Any Type</item>
-        <item>BTO</item>
-        <item>Sales of Balance</item>
-    </string-array>
-
-    <string-array name="locationListing">
-        <item>All Location</item>
-    </string-array>
-
     <string-array name="roomsListing">
         <item>Any</item>
         <item>Studio</item>
@@ -72,12 +60,15 @@
         <item>3 Bedroom</item>
         <item>4 Bedroom</item>
         <item>5 Bedroom</item>
-        <item>6 Bedroom</item>
-        <item>7 Bedroom</item>
-        <item>8 Bedroom</item>
-        <item>9 Bedroom</item>
-        <item>10+ Bedroom</item>
     </string-array>
+
+    <string-array name="type2">
+        <item>Any Type</item>
+        <item>BTO</item>
+        <item>Sales of Balance</item>
+    </string-array>
+
+
     <string name="title_activity_user_home_page">UserHomePage</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
