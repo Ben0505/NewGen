@@ -175,6 +175,7 @@
     <string name="title_activity_scrolling2">ScrollingActivity2</string>
     <string name="title_activity_search_result">SearchResult</string>
     <string name="title_activity_maps">Map</string>
+    <string name="title_activity_housing_grant">HousingGrant</string>
 
 
 </resources>

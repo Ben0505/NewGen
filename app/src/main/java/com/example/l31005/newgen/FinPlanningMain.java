@@ -57,7 +57,7 @@ public class FinPlanningMain extends Fragment {
             @Override
             public void onClick(View v) {
 
-                Intent i4 = new Intent(getActivity(), HousingGrants.class);
+                Intent i4 = new Intent(getActivity(), HousingGrant.class);
                 startActivity(i4);
 
             }
