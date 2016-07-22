@@ -1,5 +1,6 @@
 package com.example.l31005.newgen;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -9,6 +10,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
 
 public class SearchResult extends AppCompatActivity {
 
@@ -16,6 +18,7 @@ public class SearchResult extends AppCompatActivity {
     TabLayout tabLayout1;
     ViewPager viewPager1;
     ViewPagerAdapter viewPagerAdapter1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +50,17 @@ public class SearchResult extends AppCompatActivity {
 
         viewPager1.setAdapter(viewPagerAdapter1);
         tabLayout1.setupWithViewPager(viewPager1);
+
+
+        Button filter1 = (Button) findViewById(R.id.filterSearch);
+
+        filter1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent myIntent = new Intent(SearchResult.this,FilterSearch.class);
+                startActivity(myIntent);
+            }
+        });
 
     }
 

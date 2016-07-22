@@ -15,12 +15,6 @@ import java.text.DecimalFormat;
 
 public class FinPlanGrant extends AppCompatActivity  {
 
-    EditText cashonhand1;
-    EditText cpfval;
-    TextView affordable;
-    Button findProperties;
-    Double money;
-    Button checkBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,49 +24,6 @@ public class FinPlanGrant extends AppCompatActivity  {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-
-        cashonhand1 = (EditText) findViewById(R.id.cashonhand);
-        cpfval = (EditText) findViewById(R.id.cpfval);
-        checkBtn = (Button) findViewById(R.id.checkBtn);
-        affordable = (TextView) findViewById(R.id.txtAffordable);
-
-        findProperties = (Button) findViewById(R.id.btnFindProperties);
-
-        findProperties.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
-
-
-        checkBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                double newValue = Double.parseDouble(cashonhand1.getText().toString());
-                double cpfVal = Double.parseDouble(cpfval.getText().toString());
-
-                double cash =  calculateAffordtableHousingLoan(newValue, cpfVal);
-
-                DecimalFormat form = new DecimalFormat("0");
-                affordable.setText(form.format(cash));
-            }
-        });
-
-
-
     }
-
-    private double calculateAffordtableHousingLoan(double cashOnHand, double cpfMonies){
-
-        double total = cashOnHand + cpfMonies;
-
-        double rate = 0.2275;
-
-        return total / rate;
-
-    }
-
-
 
 }

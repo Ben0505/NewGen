@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -73,10 +74,15 @@
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBt4lXb19pc_pd6p_PtwSvfd6N4m0C4AnU" />
+            android:value="AIzaSyCt4Q1AG8kUXfgKwMEJq2564yvYbYtZ4cQ" />
 
         <activity android:name=".SignUp2" />
-        <activity android:name=".FindProperties"></activity>
+        <activity android:name=".FindProperties" />
+        <activity android:name=".PropertyContribution" />
+        <activity
+            android:name=".FilterSearch"
+            android:theme="@style/AppTheme.PopUpTheme" />
+        <activity android:name=".HousingGrants"></activity>
     </application>
 
 </manifest>

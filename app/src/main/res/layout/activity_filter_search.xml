@@ -3,53 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.l31005.newgen.SearchHouse">
-
-    <RelativeLayout
-        android:id="@+id/budgetSection"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:background="#ff8383">
-
-        <TextView
-            android:id="@+id/recommendedBudgetText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/recBudget"
-            android:textSize="25dp"
-            android:textStyle="bold"
-            android:textColor="#000000" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/recommendedBudgetText"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal"
-            android:weightSum="2">
-
-            <TextView
-                android:id="@+id/recommendedBudgetValue"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="18dp"
-                android:text="SGD XX,XXX" />
-
-
-        </LinearLayout>
-
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/searchSection"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="16dp"
-        android:layout_below="@+id/budgetSection"
-        android:layout_above="@+id/submitSearch"
-        android:background="@drawable/border_section">
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="com.example.l31005.newgen.FilterSearch"
+    android:background="#dedede"
+    android:gravity="center">
 
         <TextView
             android:id="@+id/searchText"
@@ -157,10 +115,6 @@
 
         </LinearLayout>
 
-
-    </RelativeLayout>
-
-
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -168,6 +122,7 @@
         android:textSize="18dp"
         android:id="@+id/submitSearch"
         android:layout_margin="16dp"
-        android:layout_alignParentBottom="true" />
+        android:layout_below="@id/linear2"/>
+
 
 </RelativeLayout>

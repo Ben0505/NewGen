@@ -4,11 +4,13 @@
     android:layout_height="match_parent"
     tools:context="com.example.l31005.newgen.SearchList">
 
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:entries="@array/my_data"
-        ></ListView>
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/my_data"
+                android:layout_below="@+id/budgetSection"
+                ></ListView>
 
 </FrameLayout>

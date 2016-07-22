@@ -7,6 +7,8 @@
     android:fitsSystemWindows="true"
     tools:context="com.example.l31005.newgen.SearchResult">
 
+
+
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,6 +20,67 @@
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"
+                android:layout_below="@+id/budgetSection"/>
+
+            <RelativeLayout
+                android:id="@+id/budgetSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:background="#cc0000">
+
+                <TextView
+                    android:id="@+id/recommendedBudgetText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recBudget"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff" />
+
+                <LinearLayout
+                    android:id="@+id/budgetValSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recommendedBudgetText"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/recommendedBudgetValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:text="SGD XX,XXX" />
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/filterSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/budgetValSection"
+                    android:text="Filter"
+                    android:layout_marginTop="5dp"
+                    />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
 
         <android.support.design.widget.TabLayout
             android:layout_width="match_parent"
