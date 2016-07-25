@@ -176,6 +176,7 @@
     <string name="title_activity_search_result">SearchResult</string>
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_housing_grant">HousingGrant</string>
+    <string name="title_activity_house_preview">HousePreview</string>
 
 
 </resources>

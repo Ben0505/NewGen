@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.ListFragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,13 +29,15 @@ import java.util.List;
 public class SearchList extends Fragment {
 
     View vView;
-
+    ListView listView01;
 
     String[] houseNames = new String[] {"The Arte", "Trellis", "Dusun one", "Toa Payoh", "Skysuite"};
     int[] previews = new int[] {R.drawable.livingroom1, R.drawable.livingroom2, R.drawable.livingroom1, R.drawable.livingroom2, R.drawable.livingroom1};
+    int[] hseLatitude;
+    int[] hseLongtitude;
 
 
-
+    ListView housesList01;
 
     public SearchList() {
         // Required empty public constructor
@@ -47,16 +50,23 @@ public class SearchList extends Fragment {
         // Inflate the layout for this fragment
         vView = inflater.inflate(R.layout.fragment_search_list, container, false);
 
+        listviewAdapter();
+
+        return vView;
+    }
+
+
+    public void listviewAdapter(){
         // Each row in the list stores country name, currency and flag
         List<HashMap<String,String>> aList = new ArrayList<HashMap<String,String>>();
 
 
         for(int i=0;i<houseNames.length;i++){
-        HashMap<String, String> hm = new HashMap<String,String>();
-        hm.put("name", "Houses : " + houseNames[i]);
-        hm.put("previews", Integer.toString(previews[i]) );
-        aList.add(hm);
-    }
+            HashMap<String, String> hm = new HashMap<String,String>();
+            hm.put("name",  houseNames[i]);
+            hm.put("previews", Integer.toString(previews[i]) );
+            aList.add(hm);
+        }
 
         // Keys used in Hashmap
         String[] from = { "previews","name", };
@@ -69,12 +79,22 @@ public class SearchList extends Fragment {
         SimpleAdapter adapter = new SimpleAdapter(vView.getContext(), aList, R.layout.model, from, to);
 
         // Getting a reference to listview of main.xml layout file
-        ListView listView = ( ListView ) vView.findViewById(R.id.listView001);
+        listView01 = ( ListView ) vView.findViewById(R.id.listView001);
 
         // Setting the adapter to the listView
-        listView.setAdapter(adapter);
+        listView01.setAdapter(adapter);
 
-        return vView;
+        // Clickable Item
+        listView01.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent toPreviewPage = new Intent(getActivity(),HousePreview.class);
+                startActivity(toPreviewPage);
+            }
+
+        });
+
     }
 
 
