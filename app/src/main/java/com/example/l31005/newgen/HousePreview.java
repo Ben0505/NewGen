@@ -13,9 +13,10 @@ public class HousePreview extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_house_preview);
-        /*viewPager01 = (ViewPager) findViewById(R.id.previewPicSection);
+
+        viewPager01 = (ViewPager) findViewById(R.id.previewPicSection);
         adapter = new HsePreviewAdapter(this);
-        viewPager01.setAdapter(adapter);*/
+        viewPager01.setAdapter(adapter);
 
     }
 }

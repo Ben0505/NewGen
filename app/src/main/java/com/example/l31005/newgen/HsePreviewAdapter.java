@@ -32,7 +32,7 @@ public class HsePreviewAdapter extends PagerAdapter {
         return (view == (RelativeLayout)object);
     }
 
-    public Object instatiateItem(ViewGroup container, int position){
+    public Object instantiateItem(ViewGroup container, int position){
         layoutInflater01 = (LayoutInflater) ctx.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View item_view = layoutInflater01.inflate(R.layout.hsepreview_model,container, false);
         ImageView imageView1 = (ImageView) item_view.findViewById(R.id.previewPics);
