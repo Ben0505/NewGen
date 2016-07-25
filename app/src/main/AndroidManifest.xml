@@ -82,15 +82,14 @@
         <activity
             android:name=".FilterSearch"
             android:theme="@style/AppTheme.PopUpTheme" />
-        <activity android:name=".HousingGrants" />
         <activity
             android:name=".HousingGrant"
             android:label="@string/title_activity_housing_grant"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".HousePreview"
             android:label="@string/title_activity_house_preview"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>
