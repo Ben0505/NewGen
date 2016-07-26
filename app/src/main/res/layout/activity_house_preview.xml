@@ -5,13 +5,193 @@
     android:layout_height="match_parent"
     tools:context="com.example.l31005.newgen.HousePreview">
 
-
-    <android.support.v4.view.ViewPager
-        android:id="@+id/previewPicSection"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-    </android.support.v4.view.ViewPager>
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/hsesPics"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/previewPicSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    >
+                </android.support.v4.view.ViewPager>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/hsesPics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="7dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/PropertyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="(Property Name)"
+                    android:textSize="25dp"/>
+
+                <TextView
+                android:id="@+id/PropertyDistrict"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(Districts)"
+                android:textSize="21dp"
+                android:layout_below="@+id/PropertyName"
+                android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/PropertyAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="(Address)"
+                    android:textSize="21dp"
+                    android:layout_below="@+id/PropertyDistrict"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/PropertyPostcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="(Postcal Code)"
+                    android:textSize="21dp"
+                    android:layout_below="@+id/PropertyAdd"
+                    android:layout_marginTop="5dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/priceSection"
+                    android:layout_below="@+id/PropertyPostcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:padding="8dp"
+                    android:background="@drawable/border_style">
+
+                    <TextView
+                        android:id="@+id/PropertyPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="S$ XXX,XXX,XXX"
+                        android:textSize="25dp"
+                        android:textColor="#000"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/insideSection"
+                    android:layout_below="@+id/priceSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="5dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_section">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/bedrooms"
+                            android:layout_marginTop="2dp"/>
+
+                        <TextView
+                            android:id="@+id/bedroomVal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="X"
+                            android:textSize="30dp"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_weight="1"
+                        android:background="@drawable/border_section">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/bathrooms"
+                            android:layout_marginTop="3dp"/>
+
+                        <TextView
+                            android:id="@+id/bathroomVal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="X"
+                            android:textSize="30dp"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sizeSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="@drawable/border_section"
+                    android:layout_below="@+id/insideSection"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/size_sqft"
+                        android:layout_marginTop="3dp"/>
+
+                    <TextView
+                        android:id="@+id/PropertySize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="XXXX sqft"
+                        android:textSize="25dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="1dp"/>
+
+                </LinearLayout>
+
+                
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
 
 
 </RelativeLayout>

@@ -1,5 +1,6 @@
 package com.example.l31005.newgen;
 
+import android.content.Intent;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +9,8 @@ public class HousePreview extends AppCompatActivity {
 
     ViewPager viewPager01;
     HsePreviewAdapter adapter;
+
+    Intent fromList = getIntent();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

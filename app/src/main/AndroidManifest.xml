@@ -90,6 +90,10 @@
             android:name=".HousePreview"
             android:label="@string/title_activity_house_preview"
             android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ScrollingActivity1"
+            android:label="@string/title_activity_scrolling1"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

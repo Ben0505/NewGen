@@ -15,7 +15,10 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import org.w3c.dom.Text;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -90,6 +93,10 @@ public class SearchList extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent toPreviewPage = new Intent(getActivity(),HousePreview.class);
+                Bundle bundle = new Bundle();
+                bundle.putStringArray("name", houseNames);
+                bundle.putIntArray("previews", previews);
+                toPreviewPage.putExtras(bundle);
                 startActivity(toPreviewPage);
             }
 
